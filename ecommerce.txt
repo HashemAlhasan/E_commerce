@@ -1,0 +1,52 @@
+The reason for express.json middelware because need to acess the json files in our request body
+we need to setup  the errors middelware under the get route to be the last one
+also we 
+
+
+
+why do we need express async errors?
+because we will use async await in our controller 
+so we need to use try and catch statmments for every fucntion 
+so we use it insted of using try catch it will we applied to our controller automaticaaly 
+why the order is important in error handlers in app.js' >
+because once we hit the 404 we are not calling next     we see route does'nt exsist 
+so express goes in all middelwareS
+THEN EXPRESS TRIES TO HIT all the routes
+after that it will automaticaaly end up in notfound
+we are not calling next in 404 
+we put the error handler last because of express rules
+the error handler is invoked in the exsisting route 
+---------------------------------------------------
+pacakge morgan
+it is a package for logging 
+meaning it always show which route is getting hit and the methode and t=if it its sucessful and the time spend 
+we set it up  tiny in the deve;opemnt only
+the enum proerty is to show the possible values 
+we setup the validators usingn validate property in mongoose 
+we have two proertys 
+the validator which is a function  that validate the input 
+the message proerty which is a message when it is not valid
+we can setup the function maually 
+or we can use npm paackage called validator 
+it is just an altentive way to validate 
+like we have matvh in jobs api 
+we use the function keyword because in that way it will points to the user unlike the attow function
+---------------------------------------------------------------------------
+we will send the token using cookies
+we can attach the cookies using res.cookies(name,value,options)
+http only means the cokkie is only acessd by the web browser
+how to acess cookie in server 
+we have to install another package it is cookie parser
+then we use it as middel ware to acess our cookie 
+the browser wether its postam or anything else will automatically send that cookie 
+we refactored our code by creating the attachcookies to response function which does all the work
+first it create the token from the token user 
+then it attach an cookie to the response 
+we can send the response in the util
+nut we will need to send the resopnse in multipel places so 
+we put the esponse in our controolles
+first the secure is like allows the browser to send cookies over https only
+the singed option is to show if the cookies has been modified or not 
+these two options are in the options of thoo cookies in the resopnse object 
+we use secure cookies only if we were in production
+we have to passs a the secret for jwt 

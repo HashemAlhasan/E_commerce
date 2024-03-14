@@ -1,0 +1,3 @@
+/node_modules
+/mockData/orders.json
+.env
