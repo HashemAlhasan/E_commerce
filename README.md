@@ -3,7 +3,7 @@ Built upon the robust and scalable Node.js environment, this e-commerce API is d
 #Key Features:
 
 - ##=User Authentication: Secure registration and login processes using JWT for safe transactions.
-- ##Product Management: Full CRUD capabilities for products, including feature image and gallery management.
+##Product Management: Full CRUD capabilities for products, including feature image and gallery management.
 - ##Order Processing: Simplified order creation and tracking to enhance customer satisfaction.
 -##- Role-Based Access Control (RBAC): Implements a secure RBAC system to differentiate user capabilities. Admins have comprehensive control over the platform, including product management, order oversight, and user permissions.
  Users enjoy a tailored shopping experience with access to, order history
